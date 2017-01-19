@@ -1,0 +1,108 @@
+﻿<Page
+    x:Class="Kassyi.NFC.Kelmis.Views.SettingPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Kassyi.NFC.Kelmis.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.Resources>
+        <Style x:Key="SettingItem" TargetType="StackPanel">
+            <Setter Property="Margin" Value="0 0 0 40" />
+        </Style>
+        <Style x:Key="SettingItemTitile" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="24" />
+        </Style>
+        <Style x:Key="SettingItemHint" TargetType="TextBlock">
+            <Setter Property="Margin" Value="0 0 0 20" />
+            <Setter Property="Foreground" Value="{StaticResource SecondaryText}" />
+            <Setter Property="TextWrapping" Value="Wrap" />
+        </Style>
+        <Style x:Key="ScrollableContent" TargetType="ScrollViewer">
+            <Setter Property="VerticalScrollBarVisibility" Value="Auto" />
+            <Setter Property="Margin" Value="10" />
+        </Style>
+    </Page.Resources>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Pivot x:Name="rootPivot" x:Uid="SettingT">
+            <PivotItem x:Uid="ScanH">
+                <ScrollViewer Style="{StaticResource ScrollableContent}">
+                    <StackPanel>
+                        <StackPanel Style="{StaticResource SettingItem}">
+                            <TextBlock Style="{StaticResource SettingItemTitile}" x:Uid="OperatingModeT" Margin="0,0,0,20">OperatingModeT</TextBlock>
+                            <ToggleSwitch Name="BatchModeSwitch" x:Uid="BatchModeH" IsOn="{x:Bind settings.BatchMode.Value, Mode=TwoWay }">BatchModeH</ToggleSwitch>
+                        </StackPanel>
+                        <StackPanel Style="{StaticResource SettingItem}">
+                            <TextBlock Style="{StaticResource SettingItemTitile}" x:Uid="SoundT" Margin="0,0,0,20">
+                                <Run Text="SoundT"/>
+                            </TextBlock>
+                            <ToggleSwitch x:Name="PlaySeSwitch" x:Uid="PlaySeAfterScanH" IsOn="{x:Bind settings.PlaySe.Value, Mode=TwoWay}" Header="PlaySeAfterScanH"/>
+                        </StackPanel>
+
+                    </StackPanel>
+                </ScrollViewer>
+            </PivotItem>
+            <PivotItem x:Uid="BackupH">
+                <ScrollViewer Style="{StaticResource ScrollableContent}">
+                    <StackPanel>
+                        <StackPanel Style="{StaticResource SettingItem}">
+                            <TextBlock Style="{StaticResource SettingItemTitile}" x:Uid="AutoBackupT">AutoBackupT</TextBlock>
+                            <TextBlock Style="{StaticResource SettingItemHint}"
+                                   x:Uid="AutoBackupDescriptionT"
+                                   Text="AutoBackupDescriptionT" />
+                            <Grid Name="AuthInfoDiv" Margin="0 0 0 10" Visibility="{x:Bind settings.DropboxAccessToken , Converter={StaticResource IsNOTNullToVisibilityConverter}}">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="24" />
+                                    <RowDefinition Height="24" />
+                                    <RowDefinition Height="40" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="50" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Canvas Grid.Row="0" Grid.RowSpan="2" Width="40" Height="40" Background="{StaticResource DropboxLogo}" VerticalAlignment="Center" HorizontalAlignment="Left" />
+                                <TextBlock Grid.Column="1" Grid.Row="0" x:Uid="DropboxAccountT">DropboxAccountT</TextBlock>
+                                <TextBlock Grid.Column="1" Grid.Row="1">test@example.com</TextBlock>
+                                <Button  Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2" Name="DeleateAuthBtn" x:Uid="DeleateAuthInfoC" VerticalAlignment="Bottom">DeleateAuthInfoC</Button>
+                            </Grid>
+                            <StackPanel Name="ConnectWithDropboxDiv" Visibility="{x:Bind settings.DropboxAccessToken , Converter={StaticResource IsNullToVisibilityConverter}}">
+                                <TextBlock Margin="0 0 0 10" x:Uid="NotConnectedWithDropboxT">NotConnectedWithDropboxT</TextBlock>
+                                <Button  x:Uid="ConecctWithDropboxC">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="25" />
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="28"/>
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Canvas Grid.Column="0"  Grid.Row="0" Width="20" Height="20" Background="{StaticResource DropboxLogo}" VerticalAlignment="Center" HorizontalAlignment="Left" />
+                                        <TextBlock Grid.Column="1" Grid.Row="0" x:Uid="ConnectWithDropboxT" VerticalAlignment="Center">ConecctWithDropboxT</TextBlock>
+                                    </Grid>
+                                </Button>
+                            </StackPanel>
+
+                        </StackPanel>
+                        <StackPanel Style="{StaticResource SettingItem}">
+                            <TextBlock Style="{StaticResource SettingItemTitile}" x:Uid="ImportT" HorizontalAlignment="Left">ImportT</TextBlock>
+                            <TextBlock Style="{StaticResource SettingItemHint}" x:Uid="ImportHintT">ImportHintT</TextBlock>
+
+                            <TextBlock x:Uid="SelectImportSourceT">SelectImportSourceT</TextBlock>
+                            <StackPanel Margin="0,0,0,10">
+                                <RadioButton GroupName="ImportSource" IsChecked="True" Tag="Kelmis">Kelmis</RadioButton>
+                                <RadioButton GroupName="ImportSource" Tag="EleMocaViewer">EleMoca Viewer</RadioButton>
+                            </StackPanel>
+
+                            <Button x:Uid="ImportC" Content="ImportC" />
+                        </StackPanel>
+                    </StackPanel>
+                </ScrollViewer>
+            </PivotItem>
+            <PivotItem x:Uid="AboutThisAppH">
+                <!--Pivot content goes here-->
+                <TextBlock Text="Content of pivot item 3."/>
+            </PivotItem>
+        </Pivot>
+    </Grid>
+</Page>

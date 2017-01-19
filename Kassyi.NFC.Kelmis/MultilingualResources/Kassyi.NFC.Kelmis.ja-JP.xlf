@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="ja-JP" original="KASSYI.NFC.KELMIS/STRINGS/EN-US/RESOURCES.RESW" tool-id="MultilingualAppToolkit" product-name="n/a" product-version="n/a" build-num="n/a">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="4.0.1605.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="KASSYI.NFC.KELMIS/STRINGS/EN-US/RESOURCES.RESW" datatype="resx">
+        <trans-unit id="CanNotUseReader" translate="yes" xml:space="preserve">
+          <source>Can't use nfc reader</source>
+          <target state="translated">NFCリーダーが使用できません
+</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">@SfCardScannerModel</note>
+        </trans-unit>
+        <trans-unit id="TouchIcCard" translate="yes" xml:space="preserve">
+          <source>Touch the SF card</source>
+          <target state="translated">交通系ICカードをタッチしてください</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">@SfCardScannerModel</note>
+        </trans-unit>
+        <trans-unit id="Reading" translate="yes" xml:space="preserve">
+          <source>Reading</source>
+          <target state="translated">読み取り中</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">@SfCardScannerModel</note>
+        </trans-unit>
+        <trans-unit id="HistoryIsNotEnough" translate="yes" xml:space="preserve">
+          <source>History is not enough</source>
+          <target state="translated">履歴が足りません</target>
+        </trans-unit>
+        <trans-unit id="TouchIcCardAgain" translate="yes" xml:space="preserve">
+          <source>Touch the SF card again</source>
+          <target state="translated">もう一度カードをタッチしてください</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">@SfCardScannerModel</note>
+        </trans-unit>
+        <trans-unit id="Hyphen" translate="yes" xml:space="preserve">
+          <source>----</source>
+          <target state="translated">----</target>
+        </trans-unit>
+        <trans-unit id="ReleaseCard" translate="yes" xml:space="preserve">
+          <source>Read complete. Release the card</source>
+          <target state="translated">読み取り済み。カードを離してください</target>
+        </trans-unit>
+        <trans-unit id="AggregationC.Content" translate="yes" xml:space="preserve">
+          <source>Aggregation</source>
+          <target state="translated">集計</target>
+        </trans-unit>
+        <trans-unit id="BatchModeH.Header" translate="yes" xml:space="preserve">
+          <source>Show History aftre scan</source>
+          <target state="translated">スキャン後履歴を表示</target>
+        </trans-unit>
+        <trans-unit id="CalendarC.Content" translate="yes" xml:space="preserve">
+          <source>Calendar</source>
+          <target state="translated">カレンダー</target>
+        </trans-unit>
+        <trans-unit id="HistoryC.Content" translate="yes" xml:space="preserve">
+          <source>History</source>
+          <target state="translated">履歴</target>
+        </trans-unit>
+        <trans-unit id="ScanC.Content" translate="yes" xml:space="preserve">
+          <source>Scan</source>
+          <target state="translated">スキャン</target>
+        </trans-unit>
+        <trans-unit id="ScanH.Header" translate="yes" xml:space="preserve">
+          <source>Scan</source>
+          <target state="translated">スキャン</target>
+        </trans-unit>
+        <trans-unit id="SettingC.Content" translate="yes" xml:space="preserve">
+          <source>Setting</source>
+          <target state="translated">設定</target>
+        </trans-unit>
+        <trans-unit id="SettingT.Title" translate="yes" xml:space="preserve">
+          <source>Setting</source>
+          <target state="translated">設定</target>
+        </trans-unit>
+        <trans-unit id="PlaySeAfterScanH.Header" translate="yes" xml:space="preserve">
+          <source>Play sound effect after finish Scaning</source>
+          <target state="translated">スキャン完了時に音を鳴らす</target>
+        </trans-unit>
+        <trans-unit id="AboutThisAppH.Header" translate="yes" xml:space="preserve">
+          <source>About this app</source>
+          <target state="translated">アプリについて</target>
+        </trans-unit>
+        <trans-unit id="BackupH.Header" translate="yes" xml:space="preserve">
+          <source>Backup</source>
+          <target state="translated">バックアップ</target>
+        </trans-unit>
+        <trans-unit id="Disabled" translate="yes" xml:space="preserve">
+          <source>Can't use app</source>
+          <target state="translated">利用できません</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">@SfCardScannerModel</note>
+        </trans-unit>
+        <trans-unit id="AutoBackupDescriptionT.Text" translate="yes" xml:space="preserve">
+          <source>When you connetct with your Dropbox account, It can be Back up automatically when you touch SF card.</source>
+          <target state="translated">Dropboxと連携すると、交通系ICカードをタッチした時に自動でバックアップできます。</target>
+        </trans-unit>
+        <trans-unit id="DropboxAccountT.Text" translate="yes" xml:space="preserve">
+          <source>Dropbox account</source>
+          <target state="translated">Dropboxアカウント</target>
+        </trans-unit>
+        <trans-unit id="DeleateAuthInfoC.Content" translate="yes" xml:space="preserve">
+          <source>Delete the authorizations information</source>
+          <target state="translated">認証情報を削除</target>
+        </trans-unit>
+        <trans-unit id="AutoBackupT.Text" translate="yes" xml:space="preserve">
+          <source>Auto backup</source>
+          <target state="translated">自動バックアップ</target>
+        </trans-unit>
+        <trans-unit id="ImportT.Text" translate="yes" xml:space="preserve">
+          <source>Import</source>
+          <target state="translated">インポート</target>
+        </trans-unit>
+        <trans-unit id="ImportHintT.Text" translate="yes" xml:space="preserve">
+          <source>Import history from backup or other app</source>
+          <target state="translated">バックアップまたは他のアプリからインポート</target>
+        </trans-unit>
+        <trans-unit id="ImportC.Content" translate="yes" xml:space="preserve">
+          <source>Import</source>
+          <target state="translated">インポート</target>
+        </trans-unit>
+        <trans-unit id="KelmisT.Text" translate="yes" xml:space="preserve">
+          <source>Kelmis</source>
+          <target state="translated">Kelmis</target>
+        </trans-unit>
+        <trans-unit id="OperatingModeT.Text" translate="yes" xml:space="preserve">
+          <source>Operating mode</source>
+          <target state="translated">動作モード</target>
+        </trans-unit>
+        <trans-unit id="SelectImportSourceT.Text" translate="yes" xml:space="preserve">
+          <source>Select import source</source>
+          <target state="translated">インポート元を選択</target>
+        </trans-unit>
+        <trans-unit id="SoundT.Text" translate="yes" xml:space="preserve">
+          <source>Sound</source>
+          <target state="translated">音</target>
+        </trans-unit>
+        <trans-unit id="ConnectWithDropboxT.Text" translate="yes" xml:space="preserve">
+          <source>Connect with Dropbox</source>
+          <target state="translated">Dropboxと連携</target>
+        </trans-unit>
+        <trans-unit id="NotConnectedWithDropboxT.Text" translate="yes" xml:space="preserve">
+          <source>Not yet connected with Dropbox</source>
+          <target state="translated">まだドロップボックスと連携していません</target>
+        </trans-unit>
+        <trans-unit id="WatingT.Text" translate="yes" xml:space="preserve">
+          <source>Waiting...</source>
+          <target state="translated">待機中…</target>
+        </trans-unit>
+        <trans-unit id="DoNotDoNowC.Content" translate="yes" xml:space="preserve">
+          <source>Don't do now</source>
+          <target state="translated">今はしない</target>
+        </trans-unit>
+        <trans-unit id="WelcomT.Text" translate="yes" xml:space="preserve">
+          <source>Welcom</source>
+          <target state="translated">ようこそ</target>
+        </trans-unit>
+        <trans-unit id="ConnectingWithDropboxT.Text" translate="yes" xml:space="preserve">
+          <source>Connecting with Dropbox</source>
+          <target state="new">Connecting with Dropbox</target>
+        </trans-unit>
+        <trans-unit id="OpenDropboxAuthWebPageT.Text" translate="yes" xml:space="preserve">
+          <source>Click here if the browser does not open</source>
+          <target state="new">Click here if the browser does not open</target>
+        </trans-unit>
+        <trans-unit id="CancelC.Content" translate="yes" xml:space="preserve">
+          <source>Cancel</source>
+          <target state="new">Cancel</target>
+        </trans-unit>
+        <trans-unit id="JanuaryC.Content&#xD;&#xA;FebruaryC.Content&#xD;&#xA;MarchC.Content&#xD;&#xA;AprilC.Content&#xD;&#xA;MayC.Content&#xD;&#xA;JuneC.Content&#xD;&#xA;JulyC.Content&#xD;&#xA;AugustC.Content&#xD;&#xA;SeptemberC.Content&#xD;&#xA;OctoberC.Content&#xD;&#xA;NovemberC.Content&#xD;&#xA;DecemberC.Content" translate="yes" xml:space="preserve">
+          <source></source>
+          <target state="new"></target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

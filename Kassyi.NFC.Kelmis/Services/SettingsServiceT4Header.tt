@@ -1,0 +1,42 @@
+﻿<#@ template debug="false" hostspecific="true" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ Assembly Name="Microsoft.CSharp" #>
+<#@ import namespace="System" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ output extension=".cs" #>
+
+<#@ include file="SettingsServiceT4Body.tt" #>
+
+<#+
+    class Recode
+    {
+        public Type Type{get;private set;}
+        public string PropName{get;set;}
+		
+		private dynamic _DefalutValue;
+		//Can't null
+        public dynamic DefalutValue
+        {
+            get { return _DefalutValue;}
+            set
+			{
+				 _DefalutValue = value;
+				 Type = value.GetType();
+			}
+        }
+	
+
+		public bool IsReadonly{get;set;}
+    }
+	List<Recode> datas = new List<Recode>(){
+		new Recode(){PropName="BatchMode",　DefalutValue=false},
+		new Recode(){PropName="PlaySe",　DefalutValue=true},
+		new Recode(){PropName="DropboxAccessToken", DefalutValue=string.Empty},
+		new Recode(){PropName="AppKey", DefalutValue="vdji8m5sqnrpp94", IsReadonly=true},
+		new Recode(){PropName="RedirctUrl", DefalutValue="https://kelmis-app.blogspot.jp/redirect.html",IsReadonly=true},
+		new Recode(){PropName="IsInitializedApp", DefalutValue = false},
+		new Recode(){PropName="DatabaseBackupRemotePath", DefalutValue="/Backup/SuicaHistory.db",IsReadonly=true},
+    };
+ #>

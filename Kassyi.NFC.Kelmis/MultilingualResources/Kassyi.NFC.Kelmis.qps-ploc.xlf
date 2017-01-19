@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="qps-ploc" original="KASSYI.NFC.KELMIS/STRINGS/EN-US/RESOURCES.RESW" tool-id="MultilingualAppToolkit" product-name="n/a" product-version="n/a" build-num="n/a">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="4.0.1605.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="KASSYI.NFC.KELMIS/STRINGS/EN-US/RESOURCES.RESW" datatype="resx">
+        <trans-unit id="CanNotUseReader" translate="yes" xml:space="preserve">
+          <source>Can't use nfc reader</source>
+          <target state="translated" state-qualifier="mt-suggestion">[053F6][!!_Ċâή'ť ùšę йƒč ѓęáđéѓ_!!]</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">@SfCardScannerModel</note>
+        </trans-unit>
+        <trans-unit id="HistoryIsNotEnough" translate="yes" xml:space="preserve">
+          <source>History is not enough</source>
+          <target state="translated" state-qualifier="mt-suggestion">[5E2E0][!!_Ήįšтóŗÿ îš ηõт êηôùġн_!!]</target>
+        </trans-unit>
+        <trans-unit id="Hyphen" translate="yes" xml:space="preserve">
+          <source>----</source>
+          <target state="translated" state-qualifier="mt-suggestion">[50C7D][!!_----_!!]</target>
+        </trans-unit>
+        <trans-unit id="Reading" translate="yes" xml:space="preserve">
+          <source>Reading</source>
+          <target state="translated" state-qualifier="mt-suggestion">[7985B][!!_Ŕèáđîиģ_!!]</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">@SfCardScannerModel</note>
+        </trans-unit>
+        <trans-unit id="ReleaseCard" translate="yes" xml:space="preserve">
+          <source>Read complete. Release the card</source>
+          <target state="translated" state-qualifier="mt-suggestion">[60CDE][!!_Řêàð čôмрĺęтé. Ŗèĺęâŝê тђę ċáŕď_!!]</target>
+        </trans-unit>
+        <trans-unit id="TouchIcCard" translate="yes" xml:space="preserve">
+          <source>Touch the SF card</source>
+          <target state="translated" state-qualifier="mt-suggestion">[711B6][!!_Τõûčĥ тнè ÎĆ Ċãŗđ_!!]</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">@SfCardScannerModel</note>
+        </trans-unit>
+        <trans-unit id="TouchIcCardAgain" translate="yes" xml:space="preserve">
+          <source>Touch the SF card again</source>
+          <target state="translated" state-qualifier="mt-suggestion">[D78D8][!!_Ţõµċђ ţĥê ĮČ ċàřď ãġàíй_!!]</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">@SfCardScannerModel</note>
+        </trans-unit>
+        <trans-unit id="AggregationC.Content" translate="yes" xml:space="preserve">
+          <source>Aggregation</source>
+          <target state="translated" state-qualifier="mt-suggestion">[30347][!!_Áģĝѓêġàτìòη_!!]</target>
+        </trans-unit>
+        <trans-unit id="BatchModeH.Header" translate="yes" xml:space="preserve">
+          <source>Show History aftre scan</source>
+          <target state="translated" state-qualifier="mt-suggestion">[67449][!!_Ъãтċћ мõðę_!!]</target>
+        </trans-unit>
+        <trans-unit id="CalendarC.Content" translate="yes" xml:space="preserve">
+          <source>Calendar</source>
+          <target state="translated" state-qualifier="mt-suggestion">[E85A9][!!_Ċâłèиđář_!!]</target>
+        </trans-unit>
+        <trans-unit id="HistoryC.Content" translate="yes" xml:space="preserve">
+          <source>History</source>
+          <target state="translated" state-qualifier="mt-suggestion">[ED622][!!_ĤìśтóѓУ_!!]</target>
+        </trans-unit>
+        <trans-unit id="ScanC.Content" translate="yes" xml:space="preserve">
+          <source>Scan</source>
+          <target state="translated" state-qualifier="mt-suggestion">[37D59][!!_Şċàй_!!]</target>
+        </trans-unit>
+        <trans-unit id="ScanH.Header" translate="yes" xml:space="preserve">
+          <source>Scan</source>
+          <target state="translated" state-qualifier="mt-suggestion">[B87D5][!!_Şčâи_!!]</target>
+        </trans-unit>
+        <trans-unit id="SettingC.Content" translate="yes" xml:space="preserve">
+          <source>Setting</source>
+          <target state="translated" state-qualifier="mt-suggestion">[F92EC][!!_Śęťťìиğ_!!]</target>
+        </trans-unit>
+        <trans-unit id="SettingT.Title" translate="yes" xml:space="preserve">
+          <source>Setting</source>
+          <target state="translated" state-qualifier="mt-suggestion">[B7F3E][!!_Ŝęтτìиĝ_!!]</target>
+        </trans-unit>
+        <trans-unit id="PlaySeAfterScanH.Header" translate="yes" xml:space="preserve">
+          <source>Play sound effect after finish Scaning</source>
+          <target state="translated" state-qualifier="mt-suggestion">[DD4C7][!!_Þļãў šõúηđ ęƒƒéĉт ãƒтêŗ ƒìήíŝн Ŝċáйįηĝ_!!]</target>
+        </trans-unit>
+        <trans-unit id="AboutThisAppH.Header" translate="yes" xml:space="preserve">
+          <source>About this app</source>
+          <target state="translated" state-qualifier="mt-suggestion">[9384C][!!_Ãьóµτ ťħìş áþρ_!!]</target>
+        </trans-unit>
+        <trans-unit id="BackupH.Header" translate="yes" xml:space="preserve">
+          <source>Backup</source>
+          <target state="translated" state-qualifier="mt-suggestion">[6009F][!!_βãċĸúþ_!!]</target>
+        </trans-unit>
+        <trans-unit id="Disabled" translate="yes" xml:space="preserve">
+          <source>Can't use app</source>
+          <target state="translated" state-qualifier="mt-suggestion">[4B47D][!!_Čâй'ţ ûśê âρþ_!!]</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">@SfCardScannerModel</note>
+        </trans-unit>
+        <trans-unit id="AutoBackupDescriptionT.Text" translate="yes" xml:space="preserve">
+          <source>When you connetct with your Dropbox account, It can be Back up automatically when you touch SF card.</source>
+          <target state="translated" state-qualifier="mt-suggestion">[9AA47][!!_Ẃђéη ÿôù ĉòηйęτĉτ ẅìťђ ýóµŗ Ďŕóръõ× âĉčóµήţ, Įτ ĉâη Бé Ьãćķ ûр àúţóмâтįčàľľÿ ẃĥêи Уóµ τòûčħ Ş₣ ćàřð._!!]</target>
+        </trans-unit>
+        <trans-unit id="DropboxAccountT.Text" translate="yes" xml:space="preserve">
+          <source>Dropbox account</source>
+          <target state="translated" state-qualifier="mt-suggestion">[9D11F][!!_ĐŕõрБõх ãččôùηţ_!!]</target>
+        </trans-unit>
+        <trans-unit id="DeleateAuthInfoC.Content" translate="yes" xml:space="preserve">
+          <source>Delete the authorizations information</source>
+          <target state="translated" state-qualifier="mt-suggestion">[98FC3][!!_Đêłęţé τћê áúтħóѓìžàťįôйŝ íйƒõřmãтįòη_!!]</target>
+        </trans-unit>
+        <trans-unit id="AutoBackupT.Text" translate="yes" xml:space="preserve">
+          <source>Auto backup</source>
+          <target state="translated" state-qualifier="mt-suggestion">[1AF74][!!_Áµťó ьáĉкµþ_!!]</target>
+        </trans-unit>
+        <trans-unit id="ImportT.Text" translate="yes" xml:space="preserve">
+          <source>Import</source>
+          <target state="translated" state-qualifier="mt-suggestion">[D66C1][!!_Îмρõŕт_!!]</target>
+        </trans-unit>
+        <trans-unit id="ImportHintT.Text" translate="yes" xml:space="preserve">
+          <source>Import history from backup or other app</source>
+          <target state="translated" state-qualifier="mt-suggestion">[EF148][!!_Įmþôѓτ нįşţòŕý ƒŗóm ъâċкúρ ôŕ òтћêŗ âρр_!!]</target>
+        </trans-unit>
+        <trans-unit id="ImportC.Content" translate="yes" xml:space="preserve">
+          <source>Import</source>
+          <target state="translated" state-qualifier="mt-suggestion">[D6BC1][!!_Îmþõѓť_!!]</target>
+        </trans-unit>
+        <trans-unit id="KelmisT.Text" translate="yes" xml:space="preserve">
+          <source>Kelmis</source>
+          <target state="translated" state-qualifier="mt-suggestion">[3B9D7][!!_Ќéľмįş_!!]</target>
+        </trans-unit>
+        <trans-unit id="OperatingModeT.Text" translate="yes" xml:space="preserve">
+          <source>Operating mode</source>
+          <target state="translated" state-qualifier="mt-suggestion">[31040][!!_Óρêѓàтìήğ мôðę_!!]</target>
+        </trans-unit>
+        <trans-unit id="SelectImportSourceT.Text" translate="yes" xml:space="preserve">
+          <source>Select import source</source>
+          <target state="translated" state-qualifier="mt-suggestion">[D6EEB][!!_Šéĺęćτ îмþõŗť şóúŕċè_!!]</target>
+        </trans-unit>
+        <trans-unit id="SoundT.Text" translate="yes" xml:space="preserve">
+          <source>Sound</source>
+          <target state="translated" state-qualifier="mt-suggestion">[2223A][!!_Ŝóûиð_!!]</target>
+        </trans-unit>
+        <trans-unit id="ConnectWithDropboxT.Text" translate="yes" xml:space="preserve">
+          <source>Connect with Dropbox</source>
+          <target state="translated" state-qualifier="mt-suggestion">[D0670][!!_Ćõйηęċţ ẅîτĥ Ðŕóръõ×_!!]</target>
+        </trans-unit>
+        <trans-unit id="NotConnectedWithDropboxT.Text" translate="yes" xml:space="preserve">
+          <source>Not yet connected with Dropbox</source>
+          <target state="translated" state-qualifier="mt-suggestion">[684F0][!!_Ńôť ўêτ ċòηήêċτéð ẁìτĥ Ðřóρъò×_!!]</target>
+        </trans-unit>
+        <trans-unit id="WatingT.Text" translate="yes" xml:space="preserve">
+          <source>Waiting...</source>
+          <target state="translated" state-qualifier="mt-suggestion">[51185][!!_Ẅãîτíйĝ..._!!]</target>
+        </trans-unit>
+        <trans-unit id="DoNotDoNowC.Content" translate="yes" xml:space="preserve">
+          <source>Don't do now</source>
+          <target state="translated" state-qualifier="mt-suggestion">[8A853][!!_Đôη'ť ďõ иôẁ_!!]</target>
+        </trans-unit>
+        <trans-unit id="WelcomT.Text" translate="yes" xml:space="preserve">
+          <source>Welcom</source>
+          <target state="translated" state-qualifier="mt-suggestion">[4AAEB][!!_Ẃéľċôм_!!]</target>
+        </trans-unit>
+        <trans-unit id="ConnectingWithDropboxT.Text" translate="yes" xml:space="preserve">
+          <source>Connecting with Dropbox</source>
+          <target state="new">Connecting with Dropbox</target>
+        </trans-unit>
+        <trans-unit id="OpenDropboxAuthWebPageT.Text" translate="yes" xml:space="preserve">
+          <source>Click here if the browser does not open</source>
+          <target state="new">Click here if the browser does not open</target>
+        </trans-unit>
+        <trans-unit id="CancelC.Content" translate="yes" xml:space="preserve">
+          <source>Cancel</source>
+          <target state="new">Cancel</target>
+        </trans-unit>
+        <trans-unit id="JanuaryC.Content&#xD;&#xA;FebruaryC.Content&#xD;&#xA;MarchC.Content&#xD;&#xA;AprilC.Content&#xD;&#xA;MayC.Content&#xD;&#xA;JuneC.Content&#xD;&#xA;JulyC.Content&#xD;&#xA;AugustC.Content&#xD;&#xA;SeptemberC.Content&#xD;&#xA;OctoberC.Content&#xD;&#xA;NovemberC.Content&#xD;&#xA;DecemberC.Content" translate="yes" xml:space="preserve">
+          <source></source>
+          <target state="new"></target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

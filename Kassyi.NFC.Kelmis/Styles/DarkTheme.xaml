@@ -1,0 +1,12 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <SolidColorBrush x:Name="PrimaryText" Color="White" Opacity="1" />
+    <SolidColorBrush x:Name="SecondaryText" Color="White" Opacity="0.7" />
+    <SolidColorBrush x:Name="DisabledAndHint" Color="White" Opacity="0.5" />
+    <SolidColorBrush x:Name="Dividers" Color="White" Opacity="0.12" />
+
+    <ImageBrush x:Name="DropboxLogo" ImageSource="/Assets/dropbox_glyph_white.png" />
+
+    <SolidColorBrush x:Name="ApplicationPageBackgroundThemeBrush" Color="#303030" />
+</ResourceDictionary>

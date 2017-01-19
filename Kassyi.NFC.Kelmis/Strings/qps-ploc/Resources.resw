@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CanNotUseReader" xml:space="preserve">
+    <value>[053F6][!!_Ċâή'ť ùšę йƒč ѓęáđéѓ_!!]</value>
+    <comment>@SfCardScannerModel</comment>
+  </data>
+  <data name="HistoryIsNotEnough" xml:space="preserve">
+    <value>[5E2E0][!!_Ήįšтóŗÿ îš ηõт êηôùġн_!!]</value>
+  </data>
+  <data name="Hyphen" xml:space="preserve">
+    <value>[50C7D][!!_----_!!]</value>
+  </data>
+  <data name="Reading" xml:space="preserve">
+    <value>[7985B][!!_Ŕèáđîиģ_!!]</value>
+    <comment>@SfCardScannerModel</comment>
+  </data>
+  <data name="ReleaseCard" xml:space="preserve">
+    <value>[60CDE][!!_Řêàð čôмрĺęтé. Ŗèĺęâŝê тђę ċáŕď_!!]</value>
+  </data>
+  <data name="TouchIcCard" xml:space="preserve">
+    <value>[711B6][!!_Τõûčĥ тнè ÎĆ Ċãŗđ_!!]</value>
+    <comment>@SfCardScannerModel</comment>
+  </data>
+  <data name="TouchIcCardAgain" xml:space="preserve">
+    <value>[D78D8][!!_Ţõµċђ ţĥê ĮČ ċàřď ãġàíй_!!]</value>
+    <comment>@SfCardScannerModel</comment>
+  </data>
+  <data name="AggregationC.Content" xml:space="preserve">
+    <value>[30347][!!_Áģĝѓêġàτìòη_!!]</value>
+  </data>
+  <data name="BatchModeH.Header" xml:space="preserve">
+    <value>[67449][!!_Ъãтċћ мõðę_!!]</value>
+  </data>
+  <data name="CalendarC.Content" xml:space="preserve">
+    <value>[E85A9][!!_Ċâłèиđář_!!]</value>
+  </data>
+  <data name="HistoryC.Content" xml:space="preserve">
+    <value>[ED622][!!_ĤìśтóѓУ_!!]</value>
+  </data>
+  <data name="ScanC.Content" xml:space="preserve">
+    <value>[37D59][!!_Şċàй_!!]</value>
+  </data>
+  <data name="ScanH.Header" xml:space="preserve">
+    <value>[B87D5][!!_Şčâи_!!]</value>
+  </data>
+  <data name="SettingC.Content" xml:space="preserve">
+    <value>[F92EC][!!_Śęťťìиğ_!!]</value>
+  </data>
+  <data name="SettingT.Title" xml:space="preserve">
+    <value>[B7F3E][!!_Ŝęтτìиĝ_!!]</value>
+  </data>
+  <data name="PlaySeAfterScanH.Header" xml:space="preserve">
+    <value>[DD4C7][!!_Þļãў šõúηđ ęƒƒéĉт ãƒтêŗ ƒìήíŝн Ŝċáйįηĝ_!!]</value>
+  </data>
+  <data name="AboutThisAppH.Header" xml:space="preserve">
+    <value>[9384C][!!_Ãьóµτ ťħìş áþρ_!!]</value>
+  </data>
+  <data name="BackupH.Header" xml:space="preserve">
+    <value>[6009F][!!_βãċĸúþ_!!]</value>
+  </data>
+  <data name="Disabled" xml:space="preserve">
+    <value>[4B47D][!!_Čâй'ţ ûśê âρþ_!!]</value>
+    <comment>@SfCardScannerModel</comment>
+  </data>
+  <data name="AutoBackupDescriptionT.Text" xml:space="preserve">
+    <value>[9AA47][!!_Ẃђéη ÿôù ĉòηйęτĉτ ẅìťђ ýóµŗ Ďŕóръõ× âĉčóµήţ, Įτ ĉâη Бé Ьãćķ ûр àúţóмâтįčàľľÿ ẃĥêи Уóµ τòûčħ Ş₣ ćàřð._!!]</value>
+  </data>
+  <data name="DropboxAccountT.Text" xml:space="preserve">
+    <value>[9D11F][!!_ĐŕõрБõх ãččôùηţ_!!]</value>
+  </data>
+  <data name="DeleateAuthInfoC.Content" xml:space="preserve">
+    <value>[98FC3][!!_Đêłęţé τћê áúтħóѓìžàťįôйŝ íйƒõřmãтįòη_!!]</value>
+  </data>
+  <data name="AutoBackupT.Text" xml:space="preserve">
+    <value>[1AF74][!!_Áµťó ьáĉкµþ_!!]</value>
+  </data>
+  <data name="ImportT.Text" xml:space="preserve">
+    <value>[D66C1][!!_Îмρõŕт_!!]</value>
+  </data>
+  <data name="ImportHintT.Text" xml:space="preserve">
+    <value>[EF148][!!_Įmþôѓτ нįşţòŕý ƒŗóm ъâċкúρ ôŕ òтћêŗ âρр_!!]</value>
+  </data>
+  <data name="ImportC.Content" xml:space="preserve">
+    <value>[D6BC1][!!_Îmþõѓť_!!]</value>
+  </data>
+  <data name="KelmisT.Text" xml:space="preserve">
+    <value>[3B9D7][!!_Ќéľмįş_!!]</value>
+  </data>
+  <data name="OperatingModeT.Text" xml:space="preserve">
+    <value>[31040][!!_Óρêѓàтìήğ мôðę_!!]</value>
+  </data>
+  <data name="SelectImportSourceT.Text" xml:space="preserve">
+    <value>[D6EEB][!!_Šéĺęćτ îмþõŗť şóúŕċè_!!]</value>
+  </data>
+  <data name="SoundT.Text" xml:space="preserve">
+    <value>[2223A][!!_Ŝóûиð_!!]</value>
+  </data>
+  <data name="ConnectWithDropboxT.Text" xml:space="preserve">
+    <value>[D0670][!!_Ćõйηęċţ ẅîτĥ Ðŕóръõ×_!!]</value>
+  </data>
+  <data name="NotConnectedWithDropboxT.Text" xml:space="preserve">
+    <value>[684F0][!!_Ńôť ўêτ ċòηήêċτéð ẁìτĥ Ðřóρъò×_!!]</value>
+  </data>
+  <data name="WatingT.Text" xml:space="preserve">
+    <value>[51185][!!_Ẅãîτíйĝ..._!!]</value>
+  </data>
+  <data name="DoNotDoNowC.Content" xml:space="preserve">
+    <value>[8A853][!!_Đôη'ť ďõ иôẁ_!!]</value>
+  </data>
+  <data name="WelcomT.Text" xml:space="preserve">
+    <value>[4AAEB][!!_Ẃéľċôм_!!]</value>
+  </data>
+</root>

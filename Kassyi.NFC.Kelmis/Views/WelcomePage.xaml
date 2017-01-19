@@ -1,0 +1,41 @@
+﻿<Page
+    x:Class="Kassyi.NFC.Kelmis.Views.WelcomePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Kassyi.NFC.Kelmis.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Margin="50">
+            <Canvas Background="{StaticResource AppIcon}" Width="60" Height="60" />
+            <TextBlock x:Uid="WelcomT" HorizontalAlignment="Center" Margin="0,20" FontSize="30" FontWeight="Bold">WelcomT</TextBlock>
+            <TextBlock x:Uid="AutoBackupDescriptionT" HorizontalAlignment="Center" TextWrapping="Wrap" Margin="0,0,0,30">AutoBackupDescriptionT</TextBlock>
+            <Button Name="LanchAuthPageBtn" 
+                    x:Uid="ConecctWithDropboxC" 
+                    Click="LanchAuthPageBtn_Click" 
+                    Background="{StaticResource T500}" 
+                    HorizontalAlignment="Center"
+                    Margin="0,10">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="25" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="28"/>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Canvas Grid.Column="0"  Grid.Row="0" Width="20" Height="20" Background="{StaticResource DropboxLogo}" VerticalAlignment="Center" HorizontalAlignment="Left" />
+                    <TextBlock Grid.Column="1" Grid.Row="0" x:Uid="ConnectWithDropboxT" VerticalAlignment="Center">ConecctWithDropboxT</TextBlock>
+                </Grid>
+            </Button>
+            <Button x:Uid="DoNotDoNowC" 
+                    Name="LancthMainPageBtn"
+                    Click="LancthMainPageBtn_Click"
+                    HorizontalAlignment="Center" 
+                    Margin="0,10">DoNotDoNowC</Button>
+
+        </StackPanel>
+    </Grid>
+</Page>

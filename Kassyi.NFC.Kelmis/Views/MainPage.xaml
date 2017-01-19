@@ -1,0 +1,76 @@
+﻿<Page
+    x:Class="Kassyi.NFC.Kelmis.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Kassyi.NFC.Kelmis"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Interactivity="using:Microsoft.Xaml.Interactivity"
+  xmlns:Core="using:Microsoft.Xaml.Interactions.Core" 
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" >
+
+        <!-- SplitViewコントロール -->
+        <SplitView x:Name="Splitter" DisplayMode="CompactOverlay" 
+               CompactPaneLength="50" OpenPaneLength="200"  
+               IsPaneOpen="{Binding ElementName=HamburgerButton,  
+                           Path=IsChecked, Mode=TwoWay}" 
+               PaneBackground="{StaticResource T500}" 
+               >
+
+            <!-- Paneプロパティにはメニューとなるコンテンツを入れる -->
+            <SplitView.Pane>
+                <Grid >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <!-- 上部のナビゲーションボタン -->
+                    <StackPanel Margin="0,50,0,0">
+                        <RadioButton x:Name="ScanSFCardPageRadioBtn"
+                            x:Uid="ScanC"
+                            Checked="MenuTaped" 
+                            Style="{StaticResource NavRadioButtonStyleEx}" 
+                            Tag="{StaticResource HomeOutline}" GroupName="Navi" />
+                        <RadioButton x:Name="HistoryPageRadioBtn"
+                            x:Uid="HistoryC"
+                            Checked="MenuTaped" 
+                            Style="{StaticResource NavRadioButtonStyleEx}" 
+                            Tag="{StaticResource ShowResults}" GroupName="Navi"  />
+                        <RadioButton x:Name="CalendarPageRadioBtn" 
+                            x:Uid="CalendarC"
+                            Checked="MenuTaped" 
+                            Style="{StaticResource NavRadioButtonStyleEx}" 
+                            Tag="{StaticResource Calendar}" GroupName="Navi"  />
+                    </StackPanel>
+
+                    <!-- 下端の［About］ボタン -->
+                    <Grid Grid.Row="1">
+                        <RadioButton x:Name="SettingPageRadioBtn"  
+                            x:Uid="SettingC"
+                            Checked="MenuTaped" 
+                            Style="{StaticResource NavRadioButtonStyleEx}" 
+                            Tag="{StaticResource Setting}" GroupName="Navi"  />
+                    </Grid>
+                </Grid>
+            </SplitView.Pane>
+
+            <!-- Contentプロパティにはメインのコンテンツを入れる -->
+            <SplitView.Content>
+                <Frame x:Name="MainContentFrame" />
+            </SplitView.Content>
+        </SplitView>
+
+        <!-- ハンバーガーボタン（SplitViewコントロールの手前に表示する） -->
+        <ToggleButton x:Name="HamburgerButton" VerticalAlignment="Top"  Width="50" Height="50"
+                      Style="{StaticResource TextBlockButtonStyle}">
+            <ToggleButton.Content>
+                <FontIcon x:Name="Hamburger"  
+                  FontFamily="Segoe MDL2 Assets" Glyph="&#xE700;" />
+            </ToggleButton.Content>
+        </ToggleButton>
+
+    </Grid>
+</Page>

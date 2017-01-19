@@ -1,0 +1,25 @@
+﻿<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ output extension=".cs" #>
+<#@ import namespace="System" #>
+<#
+const string stateMachineClassName = "State";
+const string contextInterfaceName = "ScanSFCardPageModel";
+const string actorInterfaceName = "IScanSFCardActor";
+#>
+<#@ include file="ScanSFCardPageModelStateT4Body.tt" #>
+
+<#+
+
+
+	//https://codezine.jp/article/detail/5783
+
+    //Ignore           :状態を遷移しない(現状態を維持する)ことを示す特殊な遷移先
+
+    enum E { InitializeEvent, CardAddedEvent, CardRemovedEvent }; // イベントを列挙
+    enum S { BeforeInitialize,
+		WaitingForCard,
+		WaitingForReleaseCard,
+		WaitingForAgainTouch,
+		Ignore,
+	 };  // 状態を列挙
+#>

@@ -1,0 +1,73 @@
+﻿//
+//T4 Genelated
+//
+using Reactive.Bindings;
+using Reactive.Bindings.Extensions;
+using System.ComponentModel;
+using Windows.Storage;
+using System.Linq;
+
+namespace Kassyi.NFC.Kelmis.Services
+{
+    partial class SettingsService
+    {
+	<#foreach(var data in datas.Where(d=>!d.IsReadonly)){#>
+		public ReactiveProperty<<#= data.Type.FullName #>> <#= data.PropName #> => SettingStorage.Current.ToReactivePropertyAsSynchronized(x => x.<#= data.PropName #>);
+    <#}#>
+	<#foreach(var data in datas.Where(d=>d.IsReadonly)){#>
+		public <#= data.Type.FullName #> <#= data.PropName #> {get;} = <#= data.DefalutValue == null ? "null"
+																	: data.Type.Name=="Boolean" ? data.DefalutValue.ToString().ToLower()
+																	: data.Type.Name=="String" ? $"\"{ data.DefalutValue }\""
+																	: data.DefalutValue #>;
+    <#}#>
+
+        /// <summary>
+        /// INotifyPropertyChangedを実装したApplicationDataContainerのラッパー
+        /// </summary>
+        class SettingStorage : INotifyPropertyChanged
+        {
+            public static SettingStorage Current { get; } = new SettingStorage();
+            public event PropertyChangedEventHandler PropertyChanged;
+
+            private ApplicationDataContainer settings = ApplicationData.Current.LocalSettings.CreateContainer("kelmis", ApplicationDataCreateDisposition.Always);
+		<#
+        foreach (var data in datas){#>
+            public <#= data.Type.FullName #> <#= data.PropName #>
+            {
+			<# string defalutValue = data.DefalutValue == null ? "null"
+				: data.Type.Name=="Boolean" ? data.DefalutValue.ToString().ToLower()
+				: data.Type.Name=="String" ? $"\"{ data.DefalutValue }\""
+				: data.DefalutValue;
+			#>
+                get
+				{ 
+		<# if(!data.IsReadonly){
+		#>
+					if(!settings.Values.ContainsKey(nameof(<#= data.PropName #>)))
+						return <#= defalutValue #>;
+					var v = settings.Values[nameof(<#= data.PropName #>)];
+					return v == null ? <#= defalutValue #> : (<#= data.Type.FullName #>)v;
+		<# }else{ #>
+					return <#= defalutValue #>;
+		<# } #>
+				}
+		<# if(!data.IsReadonly){
+		#>
+                set
+                {
+                    var key = nameof(<#= data.PropName #>);
+                    if (settings.Values.ContainsKey(key) && (<#= data.Type.FullName #>)(settings.Values[key]) == value)
+                        return;
+                    settings.Values[key] = value;
+                    PropertyChanged(this, new PropertyChangedEventArgs(key));
+                }
+		<# }#>
+            }
+         <#}
+		#>
+            
+
+            private SettingStorage() { }
+        }
+    }
+}

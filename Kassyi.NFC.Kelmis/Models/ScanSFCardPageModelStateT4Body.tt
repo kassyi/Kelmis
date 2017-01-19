@@ -1,0 +1,104 @@
+﻿//
+//T4 Genelated
+//
+using System;
+using System.Threading.Tasks;
+
+
+namespace Kassyi.NFC.Kelmis.Models
+{
+    partial class <#= contextInterfaceName #>{
+
+	interface <#=actorInterfaceName#>{
+		void Enter(<#=contextInterfaceName#> ct);
+		void Exit(<#=contextInterfaceName#> ct);
+<#	foreach ( string e in Enum.GetNames(typeof(E)) ) { #>
+		Task<<#= stateMachineClassName #>> DoAction(<#= e #> ev, <#=contextInterfaceName#> ct);
+<#	}#>
+	}
+
+  abstract partial class <#= stateMachineClassName #> {
+<#  foreach ( string s in Enum.GetNames(typeof(S)) ) {
+      if ( s == "Ignore" ) { #>
+    public static <#= stateMachineClassName #> Ignore { get;} = null;
+<#    } else { #>
+    public static <#= stateMachineClassName #> <#= s #>State { get; } = new <#= s #>();
+<#    }
+    } #>
+
+    partial void Trace(string st, string ev);
+    protected abstract string Name{get;}
+	public abstract void Enter(<#=contextInterfaceName#> ct);
+	public abstract void Exit(<#=contextInterfaceName#> ct);
+
+<# foreach ( string e in Enum.GetNames(typeof(E)) ) { #>
+
+	protected abstract Task<<#= stateMachineClassName #>> DoAction(<#= e #> ev, <#=contextInterfaceName#> ct);
+    public async Task<<#= stateMachineClassName #>> Handle(<#= e #> ev, <#=contextInterfaceName#> context) { 
+		Trace(Name,nameof(<#= e #>));
+		var nextState = await DoAction(ev, context);
+		if(nextState ==null)
+			nextState = this;
+		else{
+			Exit(context);
+			nextState.Enter(context);	
+		}
+		return nextState;
+    }<# /*method*/ #>
+<#  } #>
+
+  }<# /*class*/#>
+
+
+<#
+   //State
+	foreach ( var s in Enum.GetNames(typeof(S)) ) { 
+      if ( s == "Ignore" ) continue; #>
+  class <#= s #> : <#= stateMachineClassName #> {
+
+    protected override string Name{ get; } = nameof(<#= s #>);
+	private static readonly <#= s#>Actor actor = new <#= s#>Actor();
+	public override void Enter(<#=contextInterfaceName#> ct)=> actor.Enter(ct);
+	public override void Exit(<#=contextInterfaceName#> ct)=> actor.Exit(ct);
+
+<#    foreach ( var e in Enum.GetNames(typeof(E))) { #>
+	protected override Task<<#= stateMachineClassName #>> DoAction(<#= e #> ev, <#=contextInterfaceName#> ct){
+		return actor.DoAction(ev, ct);
+	}
+<#    } #>
+  }<# /*class*/#>
+
+<#	}#>
+
+}<#/*mather class*/ #>
+}<#/*namespase*/ #>
+/*
+
+<# foreach ( string e in Enum.GetNames(typeof(E)) ) { #>
+  class <#= e #> {}
+<# } #>
+
+  interface <#=contextInterfaceName#>{}
+
+  partial class <#= stateMachineClassName #> {
+    partial void Trace(string st, string ev) {}
+  }
+
+
+<#
+//Actor
+	foreach ( var s in Enum.GetNames(typeof(S)) ) {
+		if ( s == "Ignore" ) continue;
+#>
+class <#= s #>Actor : <#= actorInterfaceName #>{
+	public ScaningStatus Status{ get; }
+	public override void Enter(<#=contextInterfaceName#> ct){}
+	public override void Exit(<#=contextInterfaceName#> ct){}
+<#		foreach ( var e in  Enum.GetNames(typeof(E))) {#>
+	public async Task<<#= stateMachineClassName #>> DoAction(<#= e #> ev, <#=contextInterfaceName#> ct){
+	}
+<#
+		}#>
+}
+<#}#>
+*/

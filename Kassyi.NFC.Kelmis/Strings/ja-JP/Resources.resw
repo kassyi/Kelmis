@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CanNotUseReader" xml:space="preserve">
+    <value>NFCリーダーが使用できません
+</value>
+    <comment>@SfCardScannerModel</comment>
+  </data>
+  <data name="TouchIcCard" xml:space="preserve">
+    <value>交通系ICカードをタッチしてください</value>
+    <comment>@SfCardScannerModel</comment>
+  </data>
+  <data name="Reading" xml:space="preserve">
+    <value>読み取り中</value>
+    <comment>@SfCardScannerModel</comment>
+  </data>
+  <data name="HistoryIsNotEnough" xml:space="preserve">
+    <value>履歴が足りません</value>
+  </data>
+  <data name="TouchIcCardAgain" xml:space="preserve">
+    <value>もう一度カードをタッチしてください</value>
+    <comment>@SfCardScannerModel</comment>
+  </data>
+  <data name="Hyphen" xml:space="preserve">
+    <value>----</value>
+  </data>
+  <data name="ReleaseCard" xml:space="preserve">
+    <value>読み取り済み。カードを離してください</value>
+  </data>
+  <data name="AggregationC.Content" xml:space="preserve">
+    <value>集計</value>
+  </data>
+  <data name="BatchModeH.Header" xml:space="preserve">
+    <value>スキャン後履歴を表示</value>
+  </data>
+  <data name="CalendarC.Content" xml:space="preserve">
+    <value>カレンダー</value>
+  </data>
+  <data name="HistoryC.Content" xml:space="preserve">
+    <value>履歴</value>
+  </data>
+  <data name="ScanC.Content" xml:space="preserve">
+    <value>スキャン</value>
+  </data>
+  <data name="ScanH.Header" xml:space="preserve">
+    <value>スキャン</value>
+  </data>
+  <data name="SettingC.Content" xml:space="preserve">
+    <value>設定</value>
+  </data>
+  <data name="SettingT.Title" xml:space="preserve">
+    <value>設定</value>
+  </data>
+  <data name="PlaySeAfterScanH.Header" xml:space="preserve">
+    <value>スキャン完了時に音を鳴らす</value>
+  </data>
+  <data name="AboutThisAppH.Header" xml:space="preserve">
+    <value>アプリについて</value>
+  </data>
+  <data name="BackupH.Header" xml:space="preserve">
+    <value>バックアップ</value>
+  </data>
+  <data name="Disabled" xml:space="preserve">
+    <value>利用できません</value>
+    <comment>@SfCardScannerModel</comment>
+  </data>
+  <data name="AutoBackupDescriptionT.Text" xml:space="preserve">
+    <value>Dropboxと連携すると、交通系ICカードをタッチした時に自動でバックアップできます。</value>
+  </data>
+  <data name="DropboxAccountT.Text" xml:space="preserve">
+    <value>Dropboxアカウント</value>
+  </data>
+  <data name="DeleateAuthInfoC.Content" xml:space="preserve">
+    <value>認証情報を削除</value>
+  </data>
+  <data name="AutoBackupT.Text" xml:space="preserve">
+    <value>自動バックアップ</value>
+  </data>
+  <data name="ImportT.Text" xml:space="preserve">
+    <value>インポート</value>
+  </data>
+  <data name="ImportHintT.Text" xml:space="preserve">
+    <value>バックアップまたは他のアプリからインポート</value>
+  </data>
+  <data name="ImportC.Content" xml:space="preserve">
+    <value>インポート</value>
+  </data>
+  <data name="KelmisT.Text" xml:space="preserve">
+    <value>Kelmis</value>
+  </data>
+  <data name="OperatingModeT.Text" xml:space="preserve">
+    <value>動作モード</value>
+  </data>
+  <data name="SelectImportSourceT.Text" xml:space="preserve">
+    <value>インポート元を選択</value>
+  </data>
+  <data name="SoundT.Text" xml:space="preserve">
+    <value>音</value>
+  </data>
+  <data name="ConnectWithDropboxT.Text" xml:space="preserve">
+    <value>Dropboxと連携</value>
+  </data>
+  <data name="NotConnectedWithDropboxT.Text" xml:space="preserve">
+    <value>まだドロップボックスと連携していません</value>
+  </data>
+  <data name="WatingT.Text" xml:space="preserve">
+    <value>待機中…</value>
+  </data>
+  <data name="DoNotDoNowC.Content" xml:space="preserve">
+    <value>今はしない</value>
+  </data>
+  <data name="WelcomT.Text" xml:space="preserve">
+    <value>ようこそ</value>
+  </data>
+</root>

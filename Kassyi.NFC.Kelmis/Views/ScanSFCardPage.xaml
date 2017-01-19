@@ -1,0 +1,50 @@
+﻿<Page
+    x:Class="Kassyi.NFC.Kelmis.Views.ScanSFCardPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Kassyi.NFC.Kelmis.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:s="using:Kassyi.NFC.Kelmis.Strings"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="VisualStateGroup">
+                <VisualState x:Name="DisabledState">
+                    <VisualState.Setters>
+                        <Setter Target="StatusLed.Background" Value="#616161" />
+                        <Setter Target="StatusLed.Opacity" Value="1" />
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="ErrorState">
+                    <VisualState.Setters>
+                        <Setter Target="StatusLed.Background" Value="#e60012" />
+                        <Setter Target="StatusLed.Opacity" Value="1" />
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="ScaningState">
+                    <Storyboard>
+                        <ColorAnimation  Storyboard.TargetName="StatusLed" Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)" To="#0066ff" Duration="0" />
+                        <DoubleAnimation From="0.5" To="1" Duration="0:0:5" AutoReverse="True" RepeatBehavior="Forever"
+                             Storyboard.TargetName="StatusLed"
+                             Storyboard.TargetProperty="Opacity" />
+                    </Storyboard>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Grid  >
+                <Border Name="StatusLed" Width="390" Height="270"
+                CornerRadius="50" BorderBrush="#EEEEEE" Background="#616161" />
+                <Border  BorderThickness="5" Width="390" Height="270"
+                CornerRadius="50" BorderBrush="#EEEEEE" Background="Transparent" />
+                <Ellipse Width="80" Height="80" Fill="#EEEEEE"/>
+                <Image Source="/Assets/ic_logo.png" Width="40"/>
+                <TextBlock Name="StatusBar" Foreground="{StaticResource PrimaryTextLight}" 
+                   HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 150 0 0" Text="{x:Bind ViewModel.StatusMessage.Value, Mode=OneWay}" />
+            </Grid>
+        </StackPanel>
+        
+    </Grid>
+</Page>
