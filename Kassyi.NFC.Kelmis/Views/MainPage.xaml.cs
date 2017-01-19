@@ -25,7 +25,7 @@ namespace Kassyi.NFC.Kelmis
             this.InitializeComponent();
             menus = new Dictionary<string, RadioButton>{
                 { nameof(ScanSFCardPage), ScanSFCardPageRadioBtn },
-                { nameof(CalendarLogViewerPage),HistoryPageRadioBtn },
+                { nameof(CalendarLogViewerPage),CalendarLogViewerPageRadioBtn },
                 { nameof(CalendarPage),CalendarPageRadioBtn },
                 { nameof(SettingPage),SettingPageRadioBtn },
             };

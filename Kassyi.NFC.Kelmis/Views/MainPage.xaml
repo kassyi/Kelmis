@@ -34,7 +34,7 @@
                             Checked="MenuTaped" 
                             Style="{StaticResource NavRadioButtonStyleEx}" 
                             Tag="{StaticResource HomeOutline}" GroupName="Navi" />
-                        <RadioButton x:Name="HistoryPageRadioBtn"
+                        <RadioButton x:Name="CalendarLogViewerPageRadioBtn"
                             x:Uid="HistoryC"
                             Checked="MenuTaped" 
                             Style="{StaticResource NavRadioButtonStyleEx}" 

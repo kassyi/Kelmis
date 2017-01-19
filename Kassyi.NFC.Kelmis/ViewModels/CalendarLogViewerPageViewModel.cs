@@ -23,6 +23,8 @@ namespace Kassyi.NFC.Kelmis.Models
         void InitializeProp()
         {
             CardIdms.AddRangeOnScheduler(KelmisLogDb.Current.GetSaveedCardIdms());
+            CardIdms.CollectionChanged += 
+                (_, __) => CardSelecterSelectedIdm.Value = CardIdms.FirstOrDefault();
         }
     }
 }
