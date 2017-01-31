@@ -1,6 +1,5 @@
 ﻿using Dropbox.Api;
 using Dropbox.Api.Files;
-using Kassyi.NFC.Kelmis.Model;
 using Kassyi.NFC.Kelmis.Services;
 using Kassyi.NFC.Kelmis.Strings;
 using Pcsc;

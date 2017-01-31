@@ -14,7 +14,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Reactive.Bindings;
 using Kassyi.NFC.Kelmis.Models;
-using Kassyi.NFC.Kelmis.Model;
+using Kassyi.NFC.Kelmis.ViewModels;
 
 // 空白ページのアイテム テンプレートについては、http://go.microsoft.com/fwlink/?LinkId=234238 を参照してください
 
@@ -30,12 +30,6 @@ namespace Kassyi.NFC.Kelmis.Views
         public CalendarLogViewerPage()
         {
             this.InitializeComponent();
-            //todo: bind
-            foreach (var idm in KelmisLogDb.Current.GetSaveedCardIdms())
-            {
-                cardSelecter.Items.Add(idm);
-            }
-            
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

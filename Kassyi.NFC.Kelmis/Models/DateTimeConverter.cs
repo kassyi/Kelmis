@@ -8,10 +8,11 @@ using Windows.UI.Xaml.Data;
 
 namespace Kassyi.NFC.Kelmis.Models
 {
+
     /// <summary>
-    /// DateTimeからカレンダーの日付を列挙するクラス
+    /// カレンダーの日付を生成するクラス
     /// </summary>
-    public class DateTimeConverter : IValueConverter
+    public class CalenderGenelater : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, string language)
         {

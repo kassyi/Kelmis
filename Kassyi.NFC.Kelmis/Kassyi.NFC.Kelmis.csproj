@@ -110,8 +110,9 @@
     <Compile Include="Mdl2\Mdl2.cs" />
     <Compile Include="Models\DateBlock.cs" />
     <Compile Include="Models\DateTimeConverter.cs" />
-    <Compile Include="Models\DiaryLogRecode.cs" />
+    <Compile Include="Models\DailyLogRecode.cs" />
     <Compile Include="Models\DropboxUploder.cs" />
+    <Compile Include="Models\IEnumerableExtensions.cs" />
     <Compile Include="ViewModels\ConnectWithDropboxPageViewModel.cs" />
     <Compile Include="ViewModels\CalendarLogViewerPageViewModel.cs" />
     <Compile Include="Views\ConnectWithDropboxWatingPage.xaml.cs">

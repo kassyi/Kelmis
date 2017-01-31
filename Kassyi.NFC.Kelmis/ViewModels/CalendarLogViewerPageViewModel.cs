@@ -5,26 +5,17 @@ using System.Text;
 using System.Threading.Tasks;
 using Reactive.Bindings;
 using System.Collections.ObjectModel;
+using Kassyi.NFC.Kelmis.Models;
 
-namespace Kassyi.NFC.Kelmis.Models
+namespace Kassyi.NFC.Kelmis.ViewModels
 {
     class CalendarLogViewerPageViewModel
     {
-        public ReactiveProperty<DateTime> CurrentMonth = new ReactiveProperty<DateTime>() { Value = DateTime.Now };
-
-        public ReactiveCollection<string> CardIdms = new ReactiveCollection<string>();
-        public ReactiveProperty<string> CardSelecterSelectedIdm = new ReactiveProperty<string>();
+        public MonthlyLogbook Logbook = new MonthlyLogbook();
 
         public CalendarLogViewerPageViewModel()
         {
-            InitializeProp();
-        }
-
-        void InitializeProp()
-        {
-            CardIdms.AddRangeOnScheduler(KelmisLogDb.Current.GetSaveedCardIdms());
-            CardIdms.CollectionChanged += 
-                (_, __) => CardSelecterSelectedIdm.Value = CardIdms.FirstOrDefault();
+            
         }
     }
 }
